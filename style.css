@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+
+:root{
+    --main-blue: #00439c;
+    --text-color: #fff;
+    --text-black: #000;
+    --text-grey: #6b6b6b;
+    --button-blue-light: #0070CC;
+    --button-blue-dark: #0064b7;
+    --button-orange-light: #d53b00;
+    --button-orange-dark: #c03500;
+}
+
+
+
+*, *::before, *::after{
+box-sizing: border-box;
+}
+* {
+margin: 0;
+padding: 0;
+font: inherit;
+}
+html{
+/* color-scheme: dark light; */
+height: 100%;
+
+}
+body{
+display: flex;
+flex-direction: column;
+min-height: 100%;
+color: var(--text-black);
+font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+img, picture, svg, video{
+display: block;
+max-width: 100%;
+}
+sup{
+vertical-align: super;
+}
+
+
+footer{
+position: relative;
+color: var(--text-color);
+display: flex;
+justify-content: center;
+width: 100%;
+bottom: -200px;
+background-color: var(--main-blue);
+font-weight: 600;
+font-size: 14px;
+margin-top: auto;
+
+bottom: 0;
+}
+section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: var(--text-color);
+}
+a{
+    text-decoration: none;
+}
+
+/* -------------------global-class--------------- */
+
+/* -------orange-button---------- */
+.button-orange{
+    background: var(--button-orange-light);
+    border: 0;
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    border-radius: 50px;
+    font-weight: 600;
+    
+}
+.button-orange:hover{
+    border: 2px solid var(--text-color);
+    outline: 2px solid var(--button-orange-dark);
+    background-color: var(--button-orange-dark);
+}
+
+.button-blue{
+    background: var(--button-blue-light);
+    border: 0;
+    color: var(--text-color);
+    padding: 0.4em 1em;
+    border-radius: 50px;
+    font-weight: 600;
+    
+}
+.button-blue:hover{
+    border: 2px solid var(--text-color);
+    outline: 2px solid var(--button-blue-dark);
+    background-color: var(--button-blue-dark);
+}
+
+
+
+
+/* ---------------playstation-four-acc-section-------------- */
+
+.container-playstation-four-acc{
+    padding: 2rem 0 2rem 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    /* background-color: greenyellow; */
+}
+.container-playstation-four-acc h1{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: center;
+}
+.container-playstation-four-acc p{
+    text-align: center;
+    padding: 0.5em;
+    font-size: 18px;
+    color: var(--text-grey);
+}
+
+.grid-playstation-four-acc p{
+    text-align: left;
+   
+}
+.container-playstation-four-acc-title{
+    /* background-color: antiquewhite; */
+    padding: 1em;
+    margin: 2em;
+}
+
+.grid-playstation-four-acc{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* background-color: orange; */
+    gap: 1em;
+    width: 70%;
+    text-align: left;
+}
+.playstation-four-image{
+    border-radius: 12px;
+}
+
+
+/* ----------------discount-section--------------- */
+.container-discount{
+    padding: 4rem 0 4rem 0;
+}
+
+.grid-discount{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+
+}
+.playstation-store-div .playstation-store-image{
+    width: 85%;
+    margin: 0.5em 0 0.5em 0;
+}
+.playstation-store-div h1{
+    font-size: 36px;
+    font-weight: 300;
+    text-align: left;
+}
+.playstation-store-div p{
+    margin: 1em 0 1em 0;
+    color: var(--text-grey);
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.playstation-store-div button{
+    margin: 1em;
+}
+.discount-image-div{
+    display: flex;
+    align-items: center;
+    /* background-color: #000; */
+    
+}
+.discount-image-div .discount-image{
+    display: block;
+    object-fit: cover;
+    width: 95%;
+    border-radius: 12px;
+    transition: transform .2s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+}
+.discount-image-div .discount-image:hover{
+    transform: scale(102%); 
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+
+}
+
+
+
+/* --------------footer-section--------------- */
+.footer-box{
+    display: block;
+    /* background: red; */
+    width: calc(100% - 20%);
+}
+
+.footer-parent{
+    display: grid;
+    /* background-color: salmon; */
+    grid-template-columns:3fr 1fr 1fr 1fr;
+    padding: 2em 4em 4em 1em;
+    gap: 2em;
+}
+.footer-parent a{
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 0.4em 0 0.4em 0;
+
+}
+
+.footer-parent a:hover{
+   cursor: pointer;
+     
+}
+.footer-parent ul{
+    list-style: none;
+    padding: 1em;
+   
+
+}
+
+.footer-image-ps-bug{
+    height: 6em;
+    width: 6em;
+    margin-top: 2em;
+    /* background-color: orange; */
+    display: block;
+}
+.footer-globe-img{
+    display: inline-block;
+}
+
+
+----------footer-flex-item---------
+
+.footer-content-flex{
+    display: flex;
+    place-items: center;
+    padding: 4em;
+    /* background-color: green; */
+}
+.sie-img{
+    height: 3rem;
+    aspect-ratio: 129 / 48;
+    margin-bottom: 0.5em;
+    /* background-color: aqua; */
+
+}
+
+.footer-certificate{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    /* background-color: aquamarine; */
+}
+.esrb-thumbnail{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.esrb-img{
+    height: 3.5em;
+    aspect-ratio: 44 / 60;
+}
+
+@media only screen and (max-width: 800px){
+    .grid-playstation-four-acc{
+        width: 95%;
+        
+    }
+    
+}
+
+@media only screen and (max-width: 600px){
+
+
+
+/* ---------------playstation-four-part--------------- */
+.drop-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 12px;
+}
+.grid-playstation-four-acc{
+    width: 90%;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.grid-playstation-four-acc p{
+    text-align: center;
+    margin: 0 0.5em;
+}
+
+
+
+/* ----------------discount-part--------------- */
+    .grid-discount{
+        width: 90%;
+        grid-template-columns: 1fr;  
+
+    }
+    .discount-image-div{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .playstation-store-div{
+        padding: 0 1.5em;
+    }
+    .discount-image-div .discount-image{
+        width: 100%;
+    }
+
+
+
+/* ----------------footer-part--------------- */
+    .footer-box{
+        display: block;
+        /* background: red; */
+        width: 100%;
+    }
+    .footer-parent{
+       
+        /* background-color: salmon; */
+        grid-template-columns:1fr;
+        
+    }
+    .footer-parent ul{
+        list-style: none;
+        padding: 0 1em 0em 1em;
+       
+    
+    }
+    
+    
+    .footer-country{
+        margin-left: 1em;
+    }
+
+    .footer-sony-llc{
+        margin-left: 1em;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .footer-certificate{
+        margin-left: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        /* background-color: aquamarine; */
+    }
+    
+    .esrb-thumbnail{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+}
