@@ -123,7 +123,7 @@ a{
 
 /* ------------------playstation-vr-section--------------------- */
 .container-play-station-vr{
-    background-image: url("/image/play-station-vr/play-station-vr.webp");
+    background-image: url("image/play-station-vr/play-station-vr.webp");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -160,7 +160,7 @@ a{
 /* ------------------playstation-plus-section--------------------- */
 
 .container-play-station-plus{
-    background-image: url("/image/play-station-plus/background.webp");
+    background-image: url("image/play-station-plus/background.webp");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -212,7 +212,7 @@ a{
 /* -----------------last-of-us-section-------------------- */
 
 .container-last-of-us{
-    background-image: url("/image/last-of-us/the-last-of-us-1.jpeg");
+    background-image: url("image/last-of-us/the-last-of-us-1.jpeg");
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -493,7 +493,7 @@ a{
     }
     /* ------------vr-section------------- */
     .container-play-station-vr{
-        background-image: url("/image/play-station-vr/play-station-vr-rotate.webp");
+        background-image: url("image/play-station-vr/play-station-vr-rotate.webp");
         background-repeat: no-repeat;
         width: 100%;
         background-size: cover;
@@ -514,7 +514,7 @@ a{
     }
 
     .container-last-of-us{
-        background-image: url("/image/last-of-us/last-of-us-2.webp");
+        background-image: url("image/last-of-us/last-of-us-2.webp");
         padding: 1em 0;
     }
     .grid-last-of-us{
@@ -546,7 +546,7 @@ a{
 @media only screen and (max-width: 600px){
 
     .container-play-station-plus{
-       background-image: url(/image/play-station-plus/background-rotate.jpg);
+       background-image: url("image/play-station-plus/background-rotate.jpg");
     }
     .grid-play-station-plus{
         width: 95%;
