@@ -1,0 +1,154 @@
+/* -----------------------------for-tablet-device------------------------ */
+@media only screen and (max-width: 800px){
+    
+    .grid-play-station-plus{
+        width: 95%;
+    }
+    
+    /* ----------ps4-section------------- */
+    .grid-playstation-four-acc{
+        width: 95%;
+        
+    }
+
+    /* ------------vr-section------------- */
+    .container-play-station-vr{
+        background-image: url("/image/play-station-vr/play-station-vr-rotate.webp");
+        background-repeat: no-repeat;
+        width: 100%;
+        background-size: cover;
+        color: var(--text-color);
+    }
+    .grid-play-station-vr{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0;
+        text-align: center;
+        /* background-color: #d53b00; */
+        margin: 1em 0;
+        
+    }
+    .playstation-vr-blank-div{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+      
+}
+
+
+/* -----------------------------for-mobile-device------------------------ */
+
+@media only screen and (max-width: 600px){
+
+    .container-play-station-plus{
+       background-image: url(/image/play-station-plus/background-rotate.jpg);
+    }
+    .grid-play-station-plus{
+        width: 95%;
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .playstation-plus-text-div-flex{
+        margin: 0em;
+        /* background-color: #00439c; */
+    }
+    .playstation-plus-text-div{
+        margin: 0 0.6em;
+    }
+    .playstation-plus-logo-image{
+        width: 100%;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    .playstation-plus-image-div{
+        grid-row-start: 1;
+        grid-row-end: 1;
+        display: flex;
+        justify-content: center;
+    }
+    .playstation-plus-game-image{
+        width: 92%;
+    }
+
+
+/* ---------------playstation-four-part--------------- */
+.playstation-cards{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    border-radius: 12px;
+}
+.grid-playstation-four-acc{
+    width: 90%;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+.grid-playstation-four-acc p{
+    text-align: center;
+    margin: 0 0.5em;
+}
+
+
+
+/* ----------------discount-part--------------- */
+    .grid-discount{
+        width: 90%;
+        grid-template-columns: 1fr;  
+
+    }
+    .discount-image-div{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
+    .playstation-store-div{
+        padding: 0 1.5em;
+    }
+    .discount-image-div .discount-image{
+        width: 100%;
+    }
+
+
+
+/* ----------------footer-part--------------- */
+    .footer-box{
+        display: block;
+        /* background: red; */
+        width: 100%;
+    }
+    .footer-parent{
+       
+        /* background-color: salmon; */
+        grid-template-columns:1fr;
+        
+    }
+    .footer-parent ul{
+        list-style: none;
+        padding: 0 1em 0em 1em;
+       
+    
+    }
+    
+    
+    .footer-country{
+        margin-left: 1em;
+    }
+
+    .footer-sony-llc{
+        margin-left: 1em;
+        grid-row-start: 6;
+        grid-row-end: 6;
+    }
+    .footer-certificate{
+        margin-left: 1em;
+        grid-column-start: 1;
+        grid-column-end: 1;
+        /* background-color: aquamarine; */
+    }
+    
+    .esrb-thumbnail{
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+}
