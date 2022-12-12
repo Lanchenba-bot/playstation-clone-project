@@ -61,8 +61,8 @@ margin-top: auto;
 bottom: 0;
 }
 section{
-    display: flex;
-    justify-content: center;
+    display: grid;
+    place-items: center;
     width: 100%;
     background: var(--text-color);
 }
@@ -89,7 +89,7 @@ a{
 }
 .button-div{
     display: inline-block; 
-    margin: 2em 0;
+    margin: 1.5em 0;
 }
 .button-white{
     background: var(--button-white-light);
@@ -124,6 +124,7 @@ a{
 /* ------------------playstation-vr-section--------------------- */
 .container-play-station-vr{
     background-image: url("image/play-station-vr/play-station-vr.webp");
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -161,6 +162,7 @@ a{
 
 .container-play-station-plus{
     background-image: url("image/play-station-plus/background.webp");
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -208,11 +210,83 @@ a{
     width: 85%;
 }
 
+/* --------------playstation-monthly-card-section------------------- */
+    
+.contaniner-playstation-monthly-card{
+    background-image: url("image/playstation-monthly-card/fifa.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    background-size: cover;
+    color: var(--text-color);
+    padding: 2rem 0;  
+}
+.grid-playstation-monthly-card{
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr ;
+    width: 92%;
+    margin:3em 0;
+    gap:6rem;
+    /* background-color: #0070cc57; */
+}
+.grid-playstation-monthly-card p{
+    font-size: 18px;
+    font-weight: 400;
+    margin: 1em 0;
+}
+.playstation-thin-h1{
+    font-size: 36px;
+    font-weight: 300;
+}
+.playstation-thick-h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+.playstation-monthly-cards-grid{
+    display: grid;
+    /* background-color: #d53b00; */
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    place-items: center;
+    gap: 2em;
+    width: 90%;
+}
+.playstation-monthly-cards-items{
+    display: grid;
+    place-items: center;
+    /* background-color: #0070CC; */
+    height: 100%;
+
+   
+}
+.playstation-monthly-cards-items a{
+    display: flex;
+    justify-content: center;
+}
+.playstation-monthly-cards-items img{
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 90%;
+    transition: transform .2s;
+}
+.playstation-monthly-cards-items img:hover{
+    transform: scale(102%); 
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.playstation-monthly-cards-items h3{
+    margin: 1em 0.5em;
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
 
 /* -----------------last-of-us-section-------------------- */
 
 .container-last-of-us{
     background-image: url("image/last-of-us/the-last-of-us-1.jpeg");
+    background-position: center;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
@@ -240,6 +314,10 @@ a{
     display: inline-block;
     font-weight: 600;
 }
+
+
+
+
 /* ---------------playstation-four-acc-section-------------- */
 
 .container-playstation-four-acc{
@@ -286,6 +364,11 @@ a{
 
 .playstation-four-cards{
     margin: 2em;
+    
+}
+.playstation-cards{
+    /* background-color: #c03500; */
+    height: 100%;
 }
 
 
@@ -440,8 +523,6 @@ a{
 }
 .footer-globe-img{
     display: inline-block;
-    height: 1em;
-    width: 1em;
 }
 
 
@@ -475,6 +556,12 @@ a{
     height: 3.5em;
     aspect-ratio: 44 / 60;
 }
+.footer-globe-img{
+    display: inline-block;
+    height: 1em;
+    width: 1em;
+}
+
 
 /* -----------------------------for-tablet-device------------------------ */
 
@@ -493,10 +580,28 @@ a{
     .social-media i{
         font-size: 50px;
     }
+
+    .contaniner-playstation-monthly-card{
+            background-image: url("image/playstation-monthly-card/fifa-sqare.webp");
+            background-position: center;
+            gap: 0.5em;
+            text-align: center;
+    }
+    .grid-playstation-monthly-card{
+        margin: 2em 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .playstation-blank-div{
+        grid-row-start: 1;
+        grid-row-end: 1;
+    }
+
     /* ------------vr-section------------- */
     .container-play-station-vr{
         background-image: url("image/play-station-vr/play-station-vr-rotate.webp");
         background-repeat: no-repeat;
+        background-position: center;
         width: 100%;
         background-size: cover;
         color: var(--text-color);
@@ -557,9 +662,29 @@ a{
         gap: 0.5em;
     }
 
+    /* --------------------playstation-monthly-section------------------- */
+    .contaniner-playstation-monthly-card{
+        background-image: url("image/playstation-monthly-card/fifa-rotate.webp");
+        gap: 0.5em;
+        text-align: center;
+    }
+    .grid-playstation-monthly-card{
+        margin: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .playstation-monthly-cards-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* --------------------playstation-plus-section----------------- */
     .playstation-plus-text-div-flex{
         margin: 0em;
         /* background-color: #00439c; */
+    }
+    .playstation-blank-div{
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
     .playstation-plus-text-div{
         margin: 0 0.6em;
@@ -578,6 +703,7 @@ a{
     .playstation-plus-game-image{
         width: 92%;
     }
+
 
 
 /* ---------------playstation-four-part--------------- */
