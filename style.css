@@ -263,6 +263,7 @@ a{
 .playstation-monthly-cards-items a{
     display: flex;
     justify-content: center;
+    
 }
 .playstation-monthly-cards-items img{
     border-radius: 12px;
@@ -281,6 +282,12 @@ a{
     font-weight: 400;
     text-align: center;
 }
+.gredient-purple{
+    background: rgb(37,37,80);
+    background: linear-gradient(0deg, rgba(37,37,80,0.9042207792207793) 24%, rgba(0,0,0,0) 100%); 
+    display: grid;
+    place-items:  center;
+}
 
 /* -----------------last-of-us-section-------------------- */
 
@@ -292,6 +299,7 @@ a{
     background-size: cover;
     color: var(--text-color);
     padding: 2rem 0;
+
 }
 .grid-last-of-us{
     display: grid;
@@ -591,6 +599,15 @@ a{
         margin: 2em 0;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
+    }
+    .playstation-monthly-cards-grid{
+       width: 98%;
+       gap: 0.2em;
+       margin-top: 2em;
+       
+    }
+    .playstation-monthly-cards-grid h3{
+        font-size: 23px;
     }
     .playstation-blank-div{
         grid-row-start: 1;
